@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cor_fundo_tela">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cor_laranja_imc"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teste De IMC"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultados do Teste"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textNomeResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/textCategoriaResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textImcResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seu IMC 00.00"
+                android:textSize="16sp"
+                android:textColor="@color/cor_texto_secundario"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textPesoResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seu Peso 00.0"
+                android:textSize="16sp"
+                android:textColor="@color/cor_texto_secundario"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textAlturaResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sua Altura 000.0"
+                android:textSize="16sp"
+                android:textColor="@color/cor_texto_secundario"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:text="VOLTAR"
+        android:backgroundTint="@color/cor_laranja_imc"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>
