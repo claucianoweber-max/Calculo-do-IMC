@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/cor_fundo_tela">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seu Nome"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gênero:"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioButton
+            android:id="@+id/radioHomem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homem"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioMulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulher"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (ex: 50.0)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura em cm (ex: 160)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CALCULAR IMC"
+        android:backgroundTint="@color/cor_laranja_imc"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>
